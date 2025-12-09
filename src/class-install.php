@@ -173,6 +173,12 @@ class Install {
 			return;
 		}
 
+		$project = GP::$project->get( $this->project_id );
+		if ( ! $project ) {
+			$this->last_message = __( 'Project not found.', 'gp-live-preview-installer' );
+			return;
+		}
+
 		// File in parent directory - main plugin folder.
 		$file_name = 'gp-live-preview-installer.pot';
 		$file_path = dirname( __DIR__ ) . '/' . $file_name;
