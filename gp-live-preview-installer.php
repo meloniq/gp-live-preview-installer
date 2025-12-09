@@ -20,6 +20,9 @@
  *
  * Requires Plugins:  glotpress
  *
+ * GlotPress API URI: https://translate.meloniq.net/
+ * GlotPress API Path: wordpress/gp-live-preview-installer
+ *
  * @package Meloniq\GpLivePreviewInstaller
  */
 
